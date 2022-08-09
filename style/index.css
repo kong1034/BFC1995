@@ -1,14 +1,65 @@
-header {
-  border: 1px solid #727272;
-  width: 100%;
-  height: 15%; }
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around; }
-  header .h_c_sns, header .h_c_logo, header .h_c_menu {
-    border: 1px solid #727272;
-    width: 30%;
-    height: 5vw; }
+@charset "UTF-8";
+/*공통*/
+a {
+  text-decoration: none; }
+
+/* PC (해상도 1024px)*/
+@media all and (min-width: 1024px) {
+  /*헤더*/
+  header {
+    border-bottom: 3px solid #922d2d;
+    width: 100%;
+    height: 15%; }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+    header .h_c_sns, header .h_c_logo, header .h_c_menu {
+      width: 30%;
+      height: 5vw;
+      margin-bottom: 10px; }
+    header .h_c_sns a {
+      height: 3vw;
+      width: 3vw;
+      margin: 1vw 1vw 0 0; }
+      header .h_c_sns a img {
+        height: 3vw;
+        width: 3vw;
+        margin: 1vw 0 0 0; }
+    header .h_c_logo {
+      display: flex;
+      justify-content: center; }
+      header .h_c_logo a, header .h_c_logo img {
+        width: 5vw;
+        height: 5vw; }
+    header .h_c_menu {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0.5vw 0 0 0; }
+      header .h_c_menu a, header .h_c_menu img {
+        width: 4vw;
+        height: 4vw;
+        margin-top: .1vw; }
+
+  .s_container {
+    background-color: #393433;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    bottom: 0;
+    transition: 1s ease; }
+    .s_container .s_li {
+      margin: 100px 0 100px 0;
+      display: flex;
+      justify-content: center; }
+      .s_container .s_li a {
+        font-size: 30px;
+        color: #fff; }
+      .s_container .s_li a:hover {
+        transition: .5s ease;
+        color: #922d2d; } }
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 
 /*# sourceMappingURL=index.css.map */

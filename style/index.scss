@@ -36,7 +36,7 @@ a {
             display: flex;
             justify-content: center;
             a,img {
-                width: 5vw;
+                width: 4vw;
                 height: 5vw;
             }
         }
@@ -61,7 +61,7 @@ a {
         transition: 1s ease;
 
         .s_li {
-            margin: 100px 0 100px 0;
+            margin: 70px 0 70px 0;
             display: flex;
             justify-content: center;
 
@@ -79,8 +79,82 @@ a {
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (min-width:768px) and (max-width:1023px) {
+    header {
+        border-bottom: 3px solid #922d2d;
+        width: 100%;
+        height: 15%;
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        .h_c_sns {
+            display: none;
+        }
+    }
+    .s_container {
+        background-color: #393433;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: -200px;
+        bottom: 0;
+        transition: 1s ease;
+
+        .s_li {
+            margin: 50px 0 50px 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                font-size: 30px;
+                color: #fff;
+            }
+            a:hover {
+                transition: .5s ease;
+                color: #922d2d;
+            }
+        }
+    }
 }
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
 @media all and (max-width:767px) {
+    header {
+        border-bottom: 3px solid #922d2d;
+        width: 100%;
+        height: 15%;
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        .h_c_sns {
+            display: none;
+        }
+    }
+    .s_container {
+        background-color: #393433;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: -200px;
+        bottom: 0;
+        transition: 1s ease;
+
+        .s_li {
+            margin: 50px 0 50px 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                font-size: 30px;
+                color: #fff;
+            }
+            a:hover {
+                transition: .5s ease;
+                color: #922d2d;
+            }
+        }
+    }
 }

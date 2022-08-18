@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*공통*/
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
@@ -48,7 +49,8 @@ a {
     top: 0;
     left: -200px;
     bottom: 0;
-    transition: 1s ease; }
+    transition: 1s ease;
+    z-index: 1; }
     .s_container .s_li {
       margin: 70px 0 70px 0;
       display: flex;
@@ -66,7 +68,8 @@ a {
     height: 50vw;
     border: 1px solid black;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    z-index: -1; }
     .w_p_container .w_p_title {
       width: 11vw;
       height: 50vw;
@@ -106,7 +109,120 @@ a {
           .w_p_container .w_p_i_container .w_p_img .w_p_text p {
             font-size: 2.5vw; }
           .w_p_container .w_p_i_container .w_p_img .w_p_text h2 {
-            font-size: 3.5vw; } }
+            font-size: 3.5vw; }
+
+  .w_p_i_footer {
+    width: 15vw;
+    height: 6vw;
+    line-height: 2vw;
+    margin: 1vw 0 0 80vw;
+    display: flex; }
+    .w_p_i_footer .w_p_i_f_atag {
+      padding: 2vw 6vw;
+      background-color: #922d2d;
+      color: #fff; }
+
+  /* 경기 결과 */
+  .g_r_container {
+    width: 100vw;
+    height: 30vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between; }
+    .g_r_container .g_r_title {
+      background-color: #922d2d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10vw; }
+      .g_r_container .g_r_title p, .g_r_container .g_r_title h2 {
+        font-size: 1.5vw;
+        color: #fff; }
+    .g_r_container .g_r_card_container {
+      width: 30vw;
+      height: 30vw;
+      display: flex;
+      justify-content: space-between;
+      background-color: #393433;
+      text-align: center; }
+      .g_r_container .g_r_card_container .h_t_result_container, .g_r_container .g_r_card_container .a_t_result_container {
+        width: 11vw;
+        height: 30vw;
+        display: flex;
+        flex-direction: column; }
+        .g_r_container .g_r_card_container .h_t_result_container img, .g_r_container .g_r_card_container .a_t_result_container img {
+          width: 5vw;
+          height: 6vw;
+          margin: 1vw 3vw; }
+        .g_r_container .g_r_card_container .h_t_result_container h2, .g_r_container .g_r_card_container .a_t_result_container h2 {
+          width: 100%;
+          margin: 1vw 0;
+          font-size: 1.3vw;
+          color: #fff; }
+        .g_r_container .g_r_card_container .h_t_result_container h1, .g_r_container .g_r_card_container .a_t_result_container h1 {
+          margin: 1vw 0;
+          font-size: 4vw;
+          color: #fff; }
+        .g_r_container .g_r_card_container .h_t_result_container h5, .g_r_container .g_r_card_container .a_t_result_container h5 {
+          font-size: .7vw;
+          color: #fff; }
+      .g_r_container .g_r_card_container .g_r_timeplace_container {
+        width: 8vw;
+        height: 15vw; }
+        .g_r_container .g_r_card_container .g_r_timeplace_container h5 {
+          margin-top: 3vw;
+          color: #fff; }
+        .g_r_container .g_r_card_container .g_r_timeplace_container h4 {
+          color: #fff; }
+    .g_r_container .g_r_card_container:nth-child(1) {
+      border-right: 1px solid #fff; }
+    .g_r_container .g_r_card_container:nth-child(2) {
+      border-right: 1px solid #fff; }
+    .g_r_container .g_r_card_container:nth-child(3) {
+      border-right: 1px solid #fff; }
+
+  .g_r_footer {
+    width: 15vw;
+    height: 6vw;
+    line-height: 2vw;
+    margin: 1vw 0 0 80vw;
+    display: flex; }
+    .g_r_footer .g_r_f_atag {
+      padding: 2vw 6vw;
+      background-color: #922d2d;
+      color: #fff; }
+
+  /* 선수 기록 */
+  .p_r_header_container {
+    margin-top: 3vw;
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 5vw;
+    font-size: 1.5vw; }
+    .p_r_header_container a {
+      margin-left: .5vw;
+      color: black; }
+
+  .p_r_container {
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between; }
+    .p_r_container .p_r_title {
+      background-color: #922d2d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10vw; }
+      .p_r_container .p_r_title p, .p_r_container .p_r_title h2 {
+        font-size: 1.5vw;
+        color: #fff; }
+    .p_r_container .p_r_card_container {
+      width: 30vw;
+      height: 20vw;
+      border: 1px solid black; } }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
   header {

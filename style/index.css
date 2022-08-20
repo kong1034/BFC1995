@@ -197,32 +197,120 @@ a {
     margin-top: 3vw;
     width: 100vw;
     height: 5vw;
-    display: flex;
-    justify-content: flex-start;
     line-height: 5vw;
     font-size: 1.5vw; }
-    .p_r_header_container a {
-      margin-left: .5vw;
-      color: black; }
+    .p_r_header_container ul {
+      display: flex;
+      justify-content: flex-start; }
+      .p_r_header_container ul li {
+        margin-left: .5vw; }
+        .p_r_header_container ul li .p_r_h_score_txt {
+          color: #922d2d;
+          background-color: #fff;
+          font-weight: bolder; }
+        .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
+        .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
+          color: #000;
+          background-color: #fff; }
 
   .p_r_container {
     width: 100vw;
     height: 20vw;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .p_r_container .p_r_title {
       background-color: #922d2d;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10vw; }
+      width: 10vw;
+      height: 30vw; }
       .p_r_container .p_r_title p, .p_r_container .p_r_title h2 {
         font-size: 1.5vw;
         color: #fff; }
     .p_r_container .p_r_card_container {
+      width: 22.6vw;
+      height: 30vw;
+      position: relative; }
+      .p_r_container .p_r_card_container .p_r_c_rank_container {
+        position: absolute;
+        border: 1px solid #fff;
+        width: 4vw;
+        height: 4vw;
+        top: 25vw;
+        left: 17vw;
+        text-align: center;
+        line-height: 4vw;
+        background-color: #fff; }
+        .p_r_container .p_r_card_container .p_r_c_rank_container h1 {
+          font-size: 3vw;
+          font-weight: bolder;
+          color: #922d2d; }
+      .p_r_container .p_r_card_container img {
+        width: 100%;
+        height: 100%;
+        background-size: cover; }
+
+  .p_r_footer {
+    width: 15vw;
+    height: 6vw;
+    line-height: 2vw;
+    margin: 11vw 0 0 80vw;
+    display: flex; }
+    .p_r_footer .p_r_f_atag {
+      padding: 2vw 6vw;
+      background-color: #922d2d;
+      color: #fff; }
+
+  /* 포토 갤러리 */
+  .p_gallery_container {
+    width: 100vw;
+    height: 50vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between; }
+    .p_gallery_container .p_g_title {
+      background-color: #922d2d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10vw;
+      height: 50vw; }
+      .p_gallery_container .p_g_title p, .p_gallery_container .p_g_title h2 {
+        font-size: 1.5vw;
+        color: #fff; }
+    .p_gallery_container .p_g_left_container {
       width: 30vw;
-      height: 20vw;
-      border: 1px solid black; } }
+      height: 50vw; }
+      .p_gallery_container .p_g_left_container img {
+        width: 100%;
+        height: 100%; }
+    .p_gallery_container .p_g_right_container {
+      width: 60vw;
+      height: 50vw; }
+      .p_gallery_container .p_g_right_container .p_g_r_top_container, .p_gallery_container .p_g_right_container .p_g_r_bottom_container {
+        width: 60vw;
+        height: 25vw;
+        display: flex;
+        justify-content: space-between; }
+      .p_gallery_container .p_g_right_container .p_g_r_top_container img {
+        width: 20vw;
+        height: 25vw; }
+      .p_gallery_container .p_g_right_container .p_g_r_bottom_container img {
+        width: 30vw;
+        height: 25vw; }
+
+  .p_g_footer {
+    width: 15vw;
+    height: 6vw;
+    line-height: 2vw;
+    margin: 1vw 0 0 80vw;
+    display: flex; }
+    .p_g_footer .p_g_f_atag {
+      padding: 2vw 6vw;
+      background-color: #922d2d;
+      color: #fff; } }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
   header {

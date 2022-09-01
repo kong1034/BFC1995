@@ -20,12 +20,12 @@ a {
       height: 5vw;
       margin-bottom: 10px; }
     header .h_c_sns a {
-      height: 3vw;
-      width: 3vw;
+      height: 2.5vw;
+      width: 2.5vw;
       margin: 1vw 1vw 0 0; }
       header .h_c_sns a img {
-        height: 3vw;
-        width: 3vw;
+        height: 2.5vw;
+        width: 2.5vw;
         margin: 1vw 0 0 0; }
     header .h_c_logo {
       display: flex;
@@ -38,8 +38,8 @@ a {
       justify-content: flex-end;
       margin: 0.5vw 0 0 0; }
       header .h_c_menu a, header .h_c_menu img {
-        width: 4vw;
-        height: 4vw;
+        width: 2.7vw;
+        height: 2.7vw;
         margin-top: .1vw; }
   .s_container {
     background-color: #393433;
@@ -60,6 +60,10 @@ a {
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
+  .all_container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
   /* 이주의 선수 */
   .w_p_container {
     width: 100%;
@@ -68,7 +72,7 @@ a {
     z-index: -1;
     background-color: #fff; }
     .w_p_container .w_p_title {
-      width: 100%;
+      width: 99%;
       height: 10vw;
       display: flex;
       justify-content: flex-start;
@@ -138,7 +142,7 @@ a {
       justify-content: flex-start;
       align-items: center;
       margin-left: 1vw;
-      width: 100%;
+      width: 99%;
       height: 10vw; }
       .g_r_container .g_r_title p, .g_r_container .g_r_title h2 {
         font-size: 2.5vw;
@@ -219,7 +223,7 @@ a {
       justify-content: flex-start;
       align-items: center;
       margin-left: 1vw;
-      width: 100%;
+      width: 99%;
       height: 10vw; }
       .p_r_header_container .p_r_title p {
         font-size: 2.5vw;
@@ -310,7 +314,7 @@ a {
       justify-content: flex-start;
       align-items: center;
       margin-left: 1vw;
-      width: 100%;
+      width: 99%;
       height: 10vw; }
       .p_gallery_container .p_g_title p {
         padding-left: 1vw;
@@ -363,7 +367,7 @@ a {
     width: 100%;
     height: 100%; }
     .t_sponsor_container .t_sponsor_title_container {
-      width: 100%;
+      width: 99%;
       height: 10vw;
       display: flex;
       justify-content: flex-start;
@@ -422,7 +426,6 @@ a {
             height: 100%; }
   /* 풋터 */
   .footer_container {
-    border: 1px solid #000;
     width: 100%;
     height: 250px;
     background-color: #393433;
@@ -430,35 +433,37 @@ a {
     display: block; }
     .footer_container .f_content_container {
       margin: 0 auto;
-      border: 1px solid #fff; }
+      width: 50%; }
       .footer_container .f_content_container .f_logo_container {
-        border: 1px solid #fff;
-        width: 500px;
+        width: 100%;
         height: 100px;
-        margin: 0 35vw 0 35vw;
         display: flex;
         justify-content: center; }
         .footer_container .f_content_container .f_logo_container img {
           margin: 1vw 1vw 0 1vw; }
       .footer_container .f_content_container .f_policy_container {
-        border: 1px solid #fff;
-        width: 500px;
+        width: 100%;
         height: 50px;
-        margin: 1vw 35vw 0 35vw; }
+        display: flex;
+        justify-content: center;
+        margin-top: 5%; }
         .footer_container .f_content_container .f_policy_container a {
           margin: 0 15px 0 15px; }
-      .footer_container .f_content_container .f_address_container {
-        border: 1px solid #fff;
-        width: 500px;
-        height: 60px;
-        margin: 0 35vw 0 35vw; }
-        .footer_container .f_content_container .f_address_container h1 {
-          color: #d4d4d4;
-          margin: 0 5vw 0 5vw;
-          text-align: center; } }
+      .footer_container .f_content_container .f_txt_container {
+        width: 100%;
+        height: 60px; }
+        .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
+          width: 100%;
+          height: 50%;
+          text-align: center; }
+        .footer_container .f_content_container .f_txt_container .f_addr_container h1 {
+          color: #fff; }
+        .footer_container .f_content_container .f_txt_container .f_right_container h1 {
+          color: #b3b3b3; } }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  /* 헤더 */
   header {
     border-bottom: 3px solid #922d2d;
     width: 100%;
@@ -466,9 +471,34 @@ a {
     header nav ul {
       list-style: none;
       display: flex;
-      justify-content: space-between; }
-    header .h_c_sns {
-      display: none; }
+      justify-content: space-between;
+      border: 1px solid #000; }
+    header .h_c_sns, header .h_c_logo, header .h_c_menu {
+      width: 30%;
+      height: 5vw;
+      margin-bottom: 10px; }
+    header .h_c_sns a {
+      height: 5vw;
+      width: 5vw;
+      margin: 1vw 1vw 0 0; }
+      header .h_c_sns a img {
+        height: 5vw;
+        width: 5vw;
+        margin: 1vw 0 0 0; }
+    header .h_c_logo {
+      display: flex;
+      justify-content: center; }
+      header .h_c_logo a, header .h_c_logo img {
+        width: 5vw;
+        height: 6vw; }
+    header .h_c_menu {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0.5vw 0 0 0; }
+      header .h_c_menu a, header .h_c_menu img {
+        width: 5vw;
+        height: 5vw;
+        margin-top: .1vw; }
   .s_container {
     background-color: #393433;
     width: 200px;
@@ -498,8 +528,6 @@ a {
       list-style: none;
       display: flex;
       justify-content: space-between; }
-    header .h_c_sns {
-      display: none; }
   .s_container {
     background-color: #393433;
     width: 200px;

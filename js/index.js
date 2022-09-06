@@ -8,3 +8,13 @@ h_m_link.addEventListener('click', function() {
 h_m_link.addEventListener('blur', function() {
     s_container.style.left = '-200px';
 })
+
+$('.w_p_card_container').slick({
+    dots: false,
+    infinite: true,
+    adaptiveHeight:false,
+    autoplay:true,
+    autoplaySpeed:4000,
+    slidesToShow: 2,
+    arrows:false
+})

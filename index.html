@@ -65,11 +65,13 @@
     <section class="all_container">
         <!-- 메인-1 -->
         <section class="w_p_container">
+            <section class="w_p_title">
+                <p>이번주 활약</p>
+            </section>
             <ul class="w_p_card_container">
                 <!-- 이번주 득점왕 -->
                 <li class="w_p_card">
-                    <section class="w_p_c_ttitle_container">
-                        <h2>이번주</h2>
+                    <section class="w_p_c_title_container">
                         <h1>득점왕</h1>
                     </section>
                     <section class="w_p_c_img_container">
@@ -78,8 +80,7 @@
                 </li>
                 <!-- 이번주 태클왕 -->
                 <li class="w_p_card">
-                    <section class="w_p_c_ttitle_container">
-                        <h2>이번주</h2>
+                    <section class="w_p_c_title_container">
                         <h1>태클왕</h1>
                     </section>
                     <section class="w_p_c_img_container">
@@ -88,8 +89,7 @@
                 </li>
                 <!-- 이번주 패스왕 -->
                 <li class="w_p_card">
-                    <section class="w_p_c_ttitle_container">
-                        <h2>이번주</h2>
+                    <section class="w_p_c_title_container">
                         <h1>패스왕</h1>
                     </section>
                     <section class="w_p_c_img_container">
@@ -98,8 +98,7 @@
                 </li>
                 <!-- 이번주 MVP -->
                 <li class="w_p_card">
-                    <section class="w_p_c_ttitle_container">
-                        <h2>이번주</h2>
+                    <section class="w_p_c_title_container">
                         <h1>MVP</h1>
                     </section>
                     <section class="w_p_c_img_container">
@@ -107,10 +106,15 @@
                     </section>
                 </li>
             </ul>
-        <section class="w_p_i_footer">
-            <a href="#" class="w_p_i_f_atag">
-                더보기
-            </a>
+            <section class="w_p_content_footer">
+                <section class="slide_btn_container">
+                    <a href="#" onclick="return false"><img src="./img/play.png" class="play_btn"  id="w_p_play_btn" alt="이번주 선수 슬라이드 재생 버튼"></a>
+                    <a href="#" onclick="return false"><img src="./img/pause.png" class="pause_btn"  id="w_p_pause_btn" alt="이번주 선수 슬라이드 정지 버튼"></a>
+                </section>
+                <a href="#" class="content_atag">
+                    더보기
+                </a>
+            </section>
         </section>
 
         <!-- 메인-2 -->
@@ -118,8 +122,8 @@
             <section class="g_r_title">
                 <p>최근 경기 결과</p>
             </section>
-            <section class="g_r_content_container">
-                <section class="g_r_card_container">
+            <ul class="g_r_content_container">
+                <li class="g_r_card_container">
                     <section class="h_t_result_container">
                         <img src="./img/bfc1995_logo.png" alt="부천fc 로고">
                         <h2>부천fc</h2>
@@ -138,8 +142,8 @@
                         <h2>광주fc</h2>
                         <h1>0</h1>
                     </section>
-                </section>
-                <section class="g_r_card_container">
+                </li>
+                <li class="g_r_card_container">
                     <section class="h_t_result_container">
                         <img src="./img/bfc1995_logo.png" alt="부천fc 로고">
                         <h2>부천fc</h2>
@@ -158,8 +162,8 @@
                         <h2>김포fc</h2>
                         <h1>0</h1>
                     </section>
-                </section>
-                <section class="g_r_card_container">
+                </li>
+                <li class="g_r_card_container">
                     <section class="h_t_result_container">
                         <img src="./img/bfc1995_logo.png" alt="부천fc 로고">
                         <h2>부천fc</h2>
@@ -177,12 +181,36 @@
                         <h1>1</h1>
                         <h5>유강현 21'</h5><br/>
                     </section>
-                </section>
-            </section>
+                </li>
+                <li class="g_r_card_container">
+                    <section class="h_t_result_container">
+                        <img src="./img/bfc1995_logo.png" alt="부천fc 로고">
+                        <h2>부천fc</h2>
+                        <h1>2</h1>
+                        <h5>박창준 4'</h5><br/>
+                        <h5>한지호 21'</h5><br/>
+                    </section>
+                    <section class="g_r_timeplace_container">
+                        <h5>2022.5.8일 (일)</h5><br/>
+                        <h4>부천 종합운동장</h4>
+                    </section>
+                    <section class="a_t_result_container">
+                        <img src="./img/away_logo_4.png" alt="안산fc 로고">
+                        <h2>안산fc</h2>
+                        <h1>2</h1>
+                        <h5>티아고 21'</h5><br/>
+                        <h5>티아고 25'</h5><br/>
+                    </section>
+                </li>
+            </ul>
             
         </section>
-        <section class="g_r_footer">
-            <a href="#" class="g_r_f_atag">
+        <section class="g_r_content_footer">
+            <section class="slide_btn_container">
+                <a href="#" onclick="return false"><img src="./img/play.png" class="play_btn" id="g_r_play_btn" alt="경기 결과 슬라이드 재생 버튼"></a>
+                <a href="#" onclick="return false"><img src="./img/pause.png" class="pause_btn" id="g_r_pause_btn" alt="경기 결과 슬라이드 정지 버튼"></a>
+            </section>
+            <a href="#" class="content_atag">
                 더보기
             </a>
         </section>
@@ -200,34 +228,38 @@
                 <li><a href="#"><h5 class="p_r_h_killpass_txt">킬패스</h5></a></li>
             </ul>
         </section>
-        <section class="p_r_container">
-            <section class="p_r_card_container">
+        <ul class="p_r_container">
+            <li class="p_r_card_container">
                 <section class="p_r_c_rank_container">
                     <h1>1</h1>
                 </section>
                 <img src="./img/park.png" alt="팀 내 득점 1위 박창준 선수">
-            </section>
-            <section class="p_r_card_container">
+            </li>
+            <li class="p_r_card_container">
                 <section class="p_r_c_rank_container">
                     <h1>2</h1>
                 </section>
                 <img src="./img/han.jpeg" alt="팀 내 득점 2위 한지호 선수">
-            </section>
-            <section class="p_r_card_container">
+            </li>
+            <li class="p_r_card_container">
                 <section class="p_r_c_rank_container">
                     <h1>3</h1>
                 </section>
                 <img src="./img/samuel.jpeg" alt="팀 내 득점 3위 은나마니 선수">
-            </section>
-            <section class="p_r_card_container">
+            </li>
+            <li class="p_r_card_container">
                 <section class="p_r_c_rank_container">
                     <h1>4</h1>
                 </section>
                 <img src="./img/oh.jpeg" alt="팀 내 득점 4위 오재혁 선수">
+            </li>
+        </ul>
+        <section class="p_r_content_footer">
+            <section class="slide_btn_container">
+                <a href="#" onclick="return false"><img src="./img/play.png" class="play_btn" id="p_r_play_btn" alt="경기 결과 슬라이드 재생 버튼"></a>
+                <a href="#" onclick="return false"><img src="./img/pause.png" class="pause_btn" id="p_r_pause_btn" alt="경기 결과 슬라이드 정지 버튼"></a>
             </section>
-        </section>
-        <section class="p_r_footer">
-            <a href="#" class="p_r_f_atag">
+            <a href="#" class="content_atag">
                 더보기
             </a>
         </section>
@@ -274,10 +306,17 @@
                     <li>
                         <a href="#">
                             <img src="./img/sponsor_01.gif" alt="부천 fc 스폰서 부천시">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_02.gif" alt="부천 fc 스폰서 온세미">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_03.gif" alt="부천 fc 스폰서 켈메">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_04.gif" alt="부천 fc 스폰서 농협은행">
                         </a>
+                        
                     </li>
                 </ul>
             </section>
@@ -286,10 +325,17 @@
                     <li>
                         <a href="#">
                             <img src="./img/sponsor_05.gif" alt="부천 fc 스폰서 부천시">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_06.gif" alt="부천 fc 스폰서 온세미">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_07.gif" alt="부천 fc 스폰서 켈메">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_08.gif" alt="부천 fc 스폰서 농협은행">
                         </a>
+                        
                     </li>
                 </ul>
             </section>
@@ -298,10 +344,17 @@
                     <li>
                         <a href="#">
                             <img src="./img/sponsor_09.gif" alt="부천 fc 스폰서 부천시">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_10.gif" alt="부천 fc 스폰서 온세미">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_11.gif" alt="부천 fc 스폰서 켈메">
+                        </a>
+                        <a href="#">
                             <img src="./img/sponsor_12.gif" alt="부천 fc 스폰서 농협은행">
                         </a>
+                        
                     </li>
                 </ul>
             </section>
@@ -318,8 +371,8 @@
             </section>
             <section class="f_policy_container">
                 <a href="#">개인정보 처리방침</a>
-                <a href="#">이메일수집거부정책</a>
                 <a href="#">저작권정책</a>
+                <a href="#">이메일수집 거부정책</a>
             </section>
             <section class="f_txt_container">
                 <section class="f_addr_container">

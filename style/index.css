@@ -4,6 +4,9 @@ a {
   text-decoration: none;
   color: #fff; }
 
+body {
+  overflow-x: hidden; }
+
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   /*헤더*/
@@ -43,13 +46,14 @@ a {
         margin-top: .1vw; }
 
   .s_container {
-    background-color: #393433;
+    background-color: silver;
     width: 200px;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: -200px;
+    right: -40%;
     bottom: 0;
-    transition: 1s ease;
+    transition: .5s ease;
     z-index: 1; }
     .s_container .s_li {
       margin: 70px 0 70px 0;
@@ -57,7 +61,7 @@ a {
       justify-content: center; }
       .s_container .s_li a {
         font-size: 30px;
-        color: #fff; }
+        color: #000; }
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
@@ -73,6 +77,20 @@ a {
     height: 80%;
     display: block;
     z-index: -1; }
+    .w_p_container .w_p_title {
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 1vw;
+      width: 99%;
+      height: 10vw; }
+      .w_p_container .w_p_title p, .w_p_container .w_p_title h2 {
+        font-size: 2.5vw;
+        color: #922d2d;
+        font-weight: bolder;
+        padding-left: 1vw;
+        border-left: 5px solid #922d2d; }
     .w_p_container .w_p_card_container {
       width: 100%;
       height: 100%;
@@ -80,20 +98,18 @@ a {
       overflow: hidden; }
       .w_p_container .w_p_card_container .w_p_card {
         position: relative;
-        width: 30%;
+        width: 50vw;
         height: 55vw;
         margin: 3vw 5vw 3vw 5vw;
         background-color: #393433; }
-        .w_p_container .w_p_card_container .w_p_card .w_p_c_ttitle_container {
+        .w_p_container .w_p_card_container .w_p_card .w_p_c_title_container {
           width: 100%;
-          height: 20%;
+          height: 12%;
           color: #fff;
           text-align: center;
-          margin: 3vw 0 0 0; }
-          .w_p_container .w_p_card_container .w_p_card .w_p_c_ttitle_container h2 {
-            font-size: 3vw;
-            font-weight: bolder; }
-          .w_p_container .w_p_card_container .w_p_card .w_p_c_ttitle_container h1 {
+          margin: 3vw 0 0 0;
+          line-height: 8vw; }
+          .w_p_container .w_p_card_container .w_p_card .w_p_c_title_container h1 {
             font-size: 4.5vw;
             font-weight: bolder; }
         .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container {
@@ -103,27 +119,47 @@ a {
             width: 100%;
             height: 100%; }
 
-  .w_p_i_footer {
-    width: 15vw;
+  .w_p_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
-    display: flex; }
-    .w_p_i_footer .w_p_i_f_atag {
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .w_p_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
+      height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .w_p_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .w_p_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .w_p_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .w_p_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 15%;
       height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* 경기 결과 */
   .g_r_container {
     width: 100%;
     height: 42vw;
     margin-top: 3vw;
-    display: block; }
+    display: block;
+    z-index: -1; }
     .g_r_container .g_r_title {
       background-color: #fff;
       display: flex;
@@ -140,10 +176,11 @@ a {
         border-left: 5px solid #922d2d; }
     .g_r_container .g_r_content_container {
       display: flex;
-      justify-content: flex-start;
-      width: 100%; }
+      justify-content: space-between;
+      width: 100%;
+      height: 70%; }
       .g_r_container .g_r_content_container .g_r_card_container {
-        width: 35%;
+        width: 33.33vw;
         height: 30vw;
         display: flex;
         justify-content: space-between;
@@ -185,20 +222,39 @@ a {
       .g_r_container .g_r_content_container .g_r_card_container:nth-child(3) {
         border-right: 1px solid #393433; }
 
-  .g_r_footer {
-    width: 15vw;
+  .g_r_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
-    display: flex; }
-    .g_r_footer .g_r_f_atag {
-      width: 100%;
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .g_r_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
       height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .g_r_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .g_r_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .g_r_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .g_r_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 15%;
+      height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* 선수 기록 */
   .p_r_header_container {
@@ -238,20 +294,18 @@ a {
 
   .p_r_container {
     width: 100%;
-    height: 20vw;
-    display: flex;
-    justify-content: space-between;
-    position: relative; }
+    height: 50vw; }
     .p_r_container .p_r_card_container {
-      width: 33.33vw;
-      height: 30vw;
-      position: relative; }
+      width: 50%;
+      height: 50vw;
+      position: relative;
+      border: 1px solid #393433; }
       .p_r_container .p_r_card_container .p_r_c_rank_container {
         position: absolute;
         width: 4vw;
         height: 4vw;
-        top: 25vw;
-        left: 17vw;
+        top: 43vw;
+        left: 27vw;
         text-align: center;
         line-height: 4vw;
         background-color: #fff; }
@@ -262,7 +316,7 @@ a {
       .p_r_container .p_r_card_container img {
         width: 100%;
         height: 100%;
-        background-size: cover; }
+        object-fit: fill; }
     .p_r_container .p_r_card_container:nth-child(1) {
       border-right: 1px solid #fff; }
     .p_r_container .p_r_card_container:nth-child(2) {
@@ -270,20 +324,39 @@ a {
     .p_r_container .p_r_card_container:nth-child(3) {
       border-right: 1px solid #fff; }
 
-  .p_r_footer {
-    width: 15vw;
+  .p_r_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 11vw 0 0 80vw;
-    display: flex; }
-    .p_r_footer .p_r_f_atag {
-      width: 100%;
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .p_r_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
       height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .p_r_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .p_r_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .p_r_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .p_r_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 15%;
+      height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* BI */
   .p_r_bi_container {
@@ -346,7 +419,7 @@ a {
     width: 15vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
+    margin: 3vw 0 0 80vw;
     display: flex; }
     .p_g_footer .p_g_f_atag {
       width: 100%;
@@ -424,31 +497,34 @@ a {
   /* 풋터 */
   .footer_container {
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: #393433;
-    margin-top: 3vw;
+    margin-top: 5vw;
     display: block; }
     .footer_container .f_content_container {
       margin: 0 auto;
-      width: 50%; }
+      width: 50%;
+      height: 100%; }
       .footer_container .f_content_container .f_logo_container {
         width: 100%;
-        height: 100px;
+        height: 8vw;
         display: flex;
         justify-content: center; }
         .footer_container .f_content_container .f_logo_container img {
-          margin: 1vw 1vw 0 1vw; }
+          height: 80%;
+          margin: 2vw 1vw 0 1vw; }
       .footer_container .f_content_container .f_policy_container {
         width: 100%;
         height: 50px;
         display: flex;
         justify-content: center;
-        margin-top: 5%; }
+        margin-top: 5vw;
+        margin-left: 0; }
         .footer_container .f_content_container .f_policy_container a {
           margin: 0 15px 0 15px; }
       .footer_container .f_content_container .f_txt_container {
         width: 100%;
-        height: 60px; }
+        height: 4vw; }
         .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
           width: 100%;
           height: 50%;
@@ -496,20 +572,22 @@ a {
         margin-top: .1vw; }
 
   .s_container {
-    background-color: #393433;
+    background-color: silver;
     width: 200px;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: -200px;
+    right: -40%;
     bottom: 0;
-    transition: 1s ease; }
+    transition: .5s ease;
+    z-index: 1; }
     .s_container .s_li {
-      margin: 50px 0 50px 0;
+      margin: 70px 0 70px 0;
       display: flex;
       justify-content: center; }
       .s_container .s_li a {
         font-size: 30px;
-        color: #fff; }
+        color: #000; }
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
@@ -517,17 +595,17 @@ a {
   /* 이주의 선수 */
   .w_p_container {
     width: 100%;
-    height: auto;
+    height: 80%;
     display: block;
-    z-index: -1;
-    background-color: #fff; }
+    z-index: -1; }
     .w_p_container .w_p_title {
-      width: 99%;
-      height: 10vw;
+      background-color: #fff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-left: 1vw; }
+      margin-left: 1vw;
+      width: 99%;
+      height: 10vw; }
       .w_p_container .w_p_title p, .w_p_container .w_p_title h2 {
         font-size: 2.5vw;
         color: #922d2d;
@@ -536,62 +614,71 @@ a {
         border-left: 5px solid #922d2d; }
     .w_p_container .w_p_card_container {
       width: 100%;
-      height: 70%;
-      border: 1px solid yellow; }
-      .w_p_container .w_p_card_container .w_p_txt_container {
-        display: flex;
-        justify-content: space-around;
-        background-color: #393433;
-        height: 9vw; }
-        .w_p_container .w_p_card_container .w_p_txt_container .w_p_text {
-          width: 13vw;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
+      height: 100%;
+      background-color: #393433;
+      overflow: hidden; }
+      .w_p_container .w_p_card_container .w_p_card {
+        position: relative;
+        width: 50vw;
+        height: 55vw;
+        margin: 3vw 5vw 3vw 5vw;
+        background-color: #393433; }
+        .w_p_container .w_p_card_container .w_p_card .w_p_c_title_container {
+          width: 100%;
+          height: 12%;
           color: #fff;
-          font-weight: bolder;
-          line-height: 3vw;
-          margin-left: 50px; }
-          .w_p_container .w_p_card_container .w_p_txt_container .w_p_text p {
-            font-size: 2.5vw;
-            margin-top: 1vw; }
-          .w_p_container .w_p_card_container .w_p_txt_container .w_p_text h2 {
-            font-size: 3.5vw; }
-      .w_p_container .w_p_card_container .w_p_i_container {
-        width: 100%;
-        height: 50vw;
-        display: flex;
-        justify-content: center; }
-        .w_p_container .w_p_card_container .w_p_i_container .w_p_img {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          width: 25%;
-          height: 50vw; }
-          .w_p_container .w_p_card_container .w_p_i_container .w_p_img img {
+          text-align: center;
+          margin: 3vw 0 1vw 0;
+          line-height: 8vw; }
+          .w_p_container .w_p_card_container .w_p_card .w_p_c_title_container h1 {
+            font-size: 4.5vw;
+            font-weight: bolder; }
+        .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container {
+          width: 100%;
+          height: 74%; }
+          .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container img {
             width: 100%;
-            height: 50vw; }
+            height: 100%; }
 
-  .w_p_i_footer {
-    width: 15vw;
+  .w_p_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
-    display: flex; }
-    .w_p_i_footer .w_p_i_f_atag {
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .w_p_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
+      height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .w_p_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .w_p_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .w_p_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .w_p_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 15%;
       height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* 경기 결과 */
   .g_r_container {
     width: 100%;
     height: 42vw;
-    margin-top: 3vw;
+    margin-top: 10vw;
     display: block; }
     .g_r_container .g_r_title {
       background-color: #fff;
@@ -612,7 +699,7 @@ a {
       justify-content: flex-start;
       width: 100%; }
       .g_r_container .g_r_content_container .g_r_card_container {
-        width: 35%;
+        width: 40vw;
         height: 30vw;
         display: flex;
         justify-content: space-between;
@@ -654,24 +741,43 @@ a {
       .g_r_container .g_r_content_container .g_r_card_container:nth-child(3) {
         border-right: 1px solid #393433; }
 
-  .g_r_footer {
-    width: 15vw;
+  .g_r_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
-    display: flex; }
-    .g_r_footer .g_r_f_atag {
-      width: 100%;
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .g_r_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
       height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .g_r_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .g_r_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .g_r_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .g_r_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 15%;
+      height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* 선수 기록 */
   .p_r_header_container {
-    margin-top: 3vw;
+    margin-top: 10vw;
     width: 100%;
     height: 15vw;
     line-height: 2.7vw;
@@ -707,20 +813,21 @@ a {
 
   .p_r_container {
     width: 100%;
-    height: 20vw;
+    height: 50vw;
     display: flex;
     justify-content: space-between;
     position: relative; }
     .p_r_container .p_r_card_container {
       width: 33.33vw;
-      height: 30vw;
-      position: relative; }
+      height: 50vw;
+      position: relative;
+      border: 1px solid #393433; }
       .p_r_container .p_r_card_container .p_r_c_rank_container {
         position: absolute;
         width: 4vw;
         height: 4vw;
-        top: 25vw;
-        left: 17vw;
+        top: 43vw;
+        left: 25vw;
         text-align: center;
         line-height: 4vw;
         background-color: #fff; }
@@ -739,20 +846,39 @@ a {
     .p_r_container .p_r_card_container:nth-child(3) {
       border-right: 1px solid #fff; }
 
-  .p_r_footer {
-    width: 15vw;
+  .p_r_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 11vw 0 0 80vw;
-    display: flex; }
-    .p_r_footer .p_r_f_atag {
-      width: 100%;
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .p_r_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
       height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .p_r_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .p_r_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .p_r_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .p_r_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 15%;
+      height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* BI */
   .p_r_bi_container {
@@ -760,16 +886,17 @@ a {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3vw; }
+    margin-top: 20vw;
+    margin-bottom: 20vw; }
     .p_r_bi_container img {
-      width: 60%;
-      height: 60%; }
+      width: 100%;
+      height: 100%; }
 
   /* 포토 갤러리 */
   .p_gallery_container {
     width: 100%;
     height: 100%;
-    margin-top: 3vw;
+    margin-top: 10vw;
     display: block; }
     .p_gallery_container .p_g_title {
       background-color: #fff;
@@ -815,7 +942,7 @@ a {
     width: 15vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
+    margin: 3vw 0 0 80vw;
     display: flex; }
     .p_g_footer .p_g_f_atag {
       width: 100%;
@@ -828,7 +955,7 @@ a {
 
   /* 스폰서 */
   .t_sponsor_container {
-    margin-top: 3vw;
+    margin-top: 10vw;
     width: 100%;
     height: 100%; }
     .t_sponsor_container .t_sponsor_title_container {
@@ -893,31 +1020,34 @@ a {
   /* 풋터 */
   .footer_container {
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: #393433;
-    margin-top: 3vw;
+    margin-top: 5vw;
     display: block; }
     .footer_container .f_content_container {
       margin: 0 auto;
-      width: 50%; }
+      width: 100%;
+      height: 100%; }
       .footer_container .f_content_container .f_logo_container {
         width: 100%;
-        height: 100px;
+        height: 15vw;
         display: flex;
         justify-content: center; }
         .footer_container .f_content_container .f_logo_container img {
-          margin: 1vw 1vw 0 1vw; }
+          height: 80%;
+          margin: 2vw 1vw 0 1vw; }
       .footer_container .f_content_container .f_policy_container {
         width: 100%;
         height: 50px;
         display: flex;
         justify-content: center;
-        margin-top: 5%; }
+        margin-top: 5vw;
+        margin-left: 0; }
         .footer_container .f_content_container .f_policy_container a {
           margin: 0 15px 0 15px; }
       .footer_container .f_content_container .f_txt_container {
         width: 100%;
-        height: 60px; }
+        height: 4vw; }
         .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
           width: 100%;
           height: 50%;
@@ -965,20 +1095,22 @@ a {
         margin-top: .1vw; }
 
   .s_container {
-    background-color: #393433;
+    background-color: silver;
     width: 200px;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: -200px;
+    right: -40%;
     bottom: 0;
-    transition: 1s ease; }
+    transition: .5s ease;
+    z-index: 1; }
     .s_container .s_li {
-      margin: 50px 0 50px 0;
+      margin: 70px 0 70px 0;
       display: flex;
       justify-content: center; }
       .s_container .s_li a {
         font-size: 30px;
-        color: #fff; }
+        color: #000; }
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
@@ -986,88 +1118,101 @@ a {
   /* 이주의 선수 */
   .w_p_container {
     width: 100%;
-    height: auto;
+    height: 80%;
     display: block;
-    z-index: -1;
-    background-color: #fff; }
+    z-index: -1; }
     .w_p_container .w_p_title {
-      width: 99%;
-      height: 10vw;
+      background-color: #fff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-left: 1vw; }
+      margin: 5vw 0 0 3vw;
+      width: 99%;
+      height: 10vw; }
       .w_p_container .w_p_title p, .w_p_container .w_p_title h2 {
-        font-size: 2.5vw;
+        font-size: 4vw;
         color: #922d2d;
         font-weight: bolder;
         padding-left: 1vw;
         border-left: 5px solid #922d2d; }
-    .w_p_container .w_p_txt_container {
-      display: flex;
-      justify-content: space-around;
-      background-color: #393433;
-      height: 9vw; }
-      .w_p_container .w_p_txt_container .w_p_text {
-        width: 13vw;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        font-weight: bolder;
-        line-height: 3vw;
-        margin-left: 50px; }
-        .w_p_container .w_p_txt_container .w_p_text p {
-          font-size: 2.5vw;
-          margin-top: 1vw; }
-        .w_p_container .w_p_txt_container .w_p_text h2 {
-          font-size: 3.5vw; }
-    .w_p_container .w_p_i_container {
+    .w_p_container .w_p_card_container {
       width: 100%;
-      height: 50vw;
-      display: flex;
-      justify-content: center; }
-      .w_p_container .w_p_i_container .w_p_img {
+      height: 140vw;
+      background-color: #393433;
+      overflow: hidden; }
+      .w_p_container .w_p_card_container .w_p_card {
         position: relative;
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        height: 50vw; }
-        .w_p_container .w_p_i_container .w_p_img img {
+        width: 30%;
+        height: 140vw;
+        margin: 3vw 5vw 3vw 5vw;
+        background-color: #393433; }
+        .w_p_container .w_p_card_container .w_p_card .w_p_c_title_container {
           width: 100%;
-          height: 50vw; }
+          height: 7%;
+          color: #fff;
+          text-align: center;
+          margin: 5vw 0 0 0;
+          line-height: 8vw; }
+          .w_p_container .w_p_card_container .w_p_card .w_p_c_title_container h1 {
+            font-size: 6vw;
+            font-weight: bolder; }
+        .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container {
+          width: 100%;
+          height: 74%; }
+          .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container img {
+            width: 100%;
+            height: 100%; }
 
-  .w_p_i_footer {
-    width: 15vw;
+  .w_p_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
-    display: flex; }
-    .w_p_i_footer .w_p_i_f_atag {
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .w_p_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
+      height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .w_p_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .w_p_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .w_p_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .w_p_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 15%;
       height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* 경기 결과 */
   .g_r_container {
     width: 100%;
-    height: 42vw;
-    margin-top: 3vw;
+    height: 90vw;
+    margin-top: 10vw;
     display: block; }
     .g_r_container .g_r_title {
       background-color: #fff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-left: 1vw;
+      margin-left: 3vw;
       width: 99%;
       height: 10vw; }
       .g_r_container .g_r_title p, .g_r_container .g_r_title h2 {
-        font-size: 2.5vw;
+        font-size: 4vw;
         color: #922d2d;
         font-weight: bolder;
         padding-left: 1vw;
@@ -1075,38 +1220,42 @@ a {
     .g_r_container .g_r_content_container {
       display: flex;
       justify-content: flex-start;
-      width: 100%; }
+      width: 100%;
+      height: 89%; }
       .g_r_container .g_r_content_container .g_r_card_container {
-        width: 35%;
-        height: 30vw;
+        width: 100%;
+        height: 80vw;
         display: flex;
         justify-content: space-between;
         background-color: #393433;
         text-align: center; }
         .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
-          width: 11vw;
-          height: 30vw;
+          width: 25vw;
+          height: 100%;
+          margin: 5vw 5vw 0 5vw;
           display: flex;
           flex-direction: column; }
           .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
-            width: 5vw;
-            height: 6vw;
-            margin: 1vw 3vw; }
+            width: 10vw;
+            height: 12vw;
+            margin: 3vw 9.5vw 5vw 9.5vw; }
           .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
             width: 100%;
-            margin: 1vw 0;
-            font-size: 1.3vw;
+            margin: 1vw 1vw 0 2vw;
+            font-size: 3vw;
             color: #fff; }
           .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
-            margin: 1vw 0;
-            font-size: 4vw;
+            margin: 3vw 5vw 3vw 9vw;
+            font-size: 5vw;
             color: #fff; }
           .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
-            font-size: .7vw;
+            margin-left: 5vw;
+            font-size: 2vw;
             color: #fff; }
         .g_r_container .g_r_content_container .g_r_card_container .g_r_timeplace_container {
-          width: 8vw;
-          height: 15vw; }
+          width: 20vw;
+          height: 100%;
+          font-size: 3.1vw; }
           .g_r_container .g_r_content_container .g_r_card_container .g_r_timeplace_container h5 {
             margin-top: 3vw;
             color: #fff; }
@@ -1119,50 +1268,72 @@ a {
       .g_r_container .g_r_content_container .g_r_card_container:nth-child(3) {
         border-right: 1px solid #393433; }
 
-  .g_r_footer {
-    width: 15vw;
+  .g_r_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
-    display: flex; }
-    .g_r_footer .g_r_f_atag {
-      width: 100%;
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .g_r_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
       height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .g_r_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .g_r_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .g_r_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .g_r_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 15%;
+      height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* 선수 기록 */
   .p_r_header_container {
-    margin-top: 3vw;
     width: 100%;
-    height: 15vw;
+    height: 20vw;
     line-height: 2.7vw;
-    font-size: 1.5vw; }
+    font-size: 1.5vw;
+    margin-top: 10vw; }
     .p_r_header_container .p_r_title {
       background-color: #fff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-left: 1vw;
+      margin-left: 3vw;
       width: 99%;
       height: 10vw; }
-      .p_r_header_container .p_r_title p {
-        font-size: 2.5vw;
+      .p_r_header_container .p_r_title p, .p_r_header_container .p_r_title h2 {
+        font-size: 4vw;
         color: #922d2d;
         font-weight: bolder;
+        padding-left: 1vw;
         border-left: 5px solid #922d2d;
-        padding-left: 1vw; }
+        height: 4vw;
+        line-height: 4vw; }
     .p_r_header_container ul {
       display: flex;
       justify-content: flex-start;
       background-color: #393433;
-      height: 5vw; }
+      height: 10vw; }
       .p_r_header_container ul li {
-        line-height: 5vw;
-        margin-left: .5vw; }
+        line-height: 10vw;
+        margin-left: 1.5vw;
+        font-size: 3vw; }
         .p_r_header_container ul li .p_r_h_score_txt {
           color: #922d2d;
           font-weight: bolder; }
@@ -1172,20 +1343,21 @@ a {
 
   .p_r_container {
     width: 100%;
-    height: 20vw;
+    height: 100vw;
     display: flex;
     justify-content: space-between;
     position: relative; }
     .p_r_container .p_r_card_container {
-      width: 33.33vw;
-      height: 30vw;
-      position: relative; }
+      width: 35%;
+      height: 100vw;
+      position: relative;
+      border: 1px solid #393433; }
       .p_r_container .p_r_card_container .p_r_c_rank_container {
         position: absolute;
         width: 4vw;
         height: 4vw;
         top: 25vw;
-        left: 17vw;
+        left: 25vw;
         text-align: center;
         line-height: 4vw;
         background-color: #fff; }
@@ -1204,20 +1376,39 @@ a {
     .p_r_container .p_r_card_container:nth-child(3) {
       border-right: 1px solid #fff; }
 
-  .p_r_footer {
-    width: 15vw;
+  .p_r_content_footer {
+    width: 100vw;
     height: 6vw;
     line-height: 2vw;
-    margin: 11vw 0 0 80vw;
-    display: flex; }
-    .p_r_footer .p_r_f_atag {
-      width: 100%;
+    margin: 3vw 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .p_r_content_footer .slide_btn_container {
+      border: 3px solid #922d2d;
+      width: 10%;
       height: 100%;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around; }
+      .p_r_content_footer .slide_btn_container a {
+        width: 50%;
+        height: 100%; }
+        .p_r_content_footer .slide_btn_container a .play_btn {
+          width: 100%;
+          height: 100%; }
+        .p_r_content_footer .slide_btn_container a .pause_btn {
+          width: 80%;
+          height: 80%;
+          margin-top: .5vw; }
+    .p_r_content_footer .content_atag {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 15%;
+      height: 100%;
       background-color: #922d2d;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5%; }
 
   /* BI */
   .p_r_bi_container {
@@ -1225,45 +1416,45 @@ a {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3vw; }
+    margin-top: 20vw; }
     .p_r_bi_container img {
-      width: 60%;
+      width: 100%;
       height: 60%; }
 
   /* 포토 갤러리 */
   .p_gallery_container {
     width: 100%;
-    height: 100%;
-    margin-top: 3vw;
+    height: 60%;
+    margin-top: 20vw;
     display: block; }
     .p_gallery_container .p_g_title {
       background-color: #fff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-left: 1vw;
+      margin-left: 3vw;
       width: 99%;
       height: 10vw; }
       .p_gallery_container .p_g_title p {
-        padding-left: 1vw;
-        border-left: 5px solid #922d2d;
-        font-size: 2.5vw;
+        font-size: 4vw;
         color: #922d2d;
-        font-weight: bolder; }
+        font-weight: bolder;
+        padding-left: 1vw;
+        border-left: 5px solid #922d2d; }
     .p_gallery_container .p_g_photo_container {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      height: 100%; }
+      height: 60vw; }
       .p_gallery_container .p_g_photo_container .p_g_left_container {
         width: 40%;
-        height: 50vw; }
+        height: 60vw; }
         .p_gallery_container .p_g_photo_container .p_g_left_container img {
           width: 100%;
           height: 100%; }
       .p_gallery_container .p_g_photo_container .p_g_right_container {
         width: 60%;
-        height: 50vw; }
+        height: 60vw; }
         .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container, .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
           width: 100%;
           height: 50%;
@@ -1277,10 +1468,10 @@ a {
           height: 100%; }
 
   .p_g_footer {
-    width: 15vw;
-    height: 6vw;
+    width: 20vw;
+    height: 10vw;
     line-height: 2vw;
-    margin: 1vw 0 0 80vw;
+    margin: 3vw 0 0 75vw;
     display: flex; }
     .p_g_footer .p_g_f_atag {
       width: 100%;
@@ -1293,22 +1484,23 @@ a {
 
   /* 스폰서 */
   .t_sponsor_container {
-    margin-top: 3vw;
+    margin-top: 10vw;
     width: 100%;
     height: 100%; }
     .t_sponsor_container .t_sponsor_title_container {
-      width: 99%;
-      height: 10vw;
+      background-color: #fff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-left: 1vw; }
+      margin-left: 3vw;
+      width: 99%;
+      height: 10vw; }
       .t_sponsor_container .t_sponsor_title_container h1 {
-        font-size: 2.5vw;
+        font-size: 4vw;
+        color: #922d2d;
         font-weight: bolder;
         padding-left: 1vw;
-        border-left: 5px solid #922d2d;
-        color: #922d2d; }
+        border-left: 5px solid #922d2d; }
     .t_sponsor_container .t_s_top_container, .t_sponsor_container .t_s_middle_container, .t_sponsor_container .t_s_bottom_container {
       width: 100%;
       height: 33.33%;
@@ -1360,29 +1552,32 @@ a {
     width: 100%;
     height: 250px;
     background-color: #393433;
-    margin-top: 3vw;
+    margin-top: 10vw;
     display: block; }
     .footer_container .f_content_container {
       margin: 0 auto;
-      width: 50%; }
+      width: 100%;
+      height: 100%; }
       .footer_container .f_content_container .f_logo_container {
         width: 100%;
-        height: 100px;
+        height: 15vw;
         display: flex;
         justify-content: center; }
         .footer_container .f_content_container .f_logo_container img {
-          margin: 1vw 1vw 0 1vw; }
+          height: 80%;
+          margin: 2vw 1vw 0 1vw; }
       .footer_container .f_content_container .f_policy_container {
         width: 100%;
         height: 50px;
         display: flex;
         justify-content: center;
-        margin-top: 5%; }
+        margin-top: 7vw;
+        margin-left: 0; }
         .footer_container .f_content_container .f_policy_container a {
           margin: 0 15px 0 15px; }
       .footer_container .f_content_container .f_txt_container {
         width: 100%;
-        height: 60px; }
+        height: 6vw; }
         .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
           width: 100%;
           height: 50%;

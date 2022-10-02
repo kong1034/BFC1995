@@ -1,11 +1,8 @@
 @charset "UTF-8";
 /*공통*/
-a {
-  text-decoration: none;
-  color: #fff; }
-
-body {
-  overflow-x: hidden; }
+body, html {
+  height: auto;
+  width: 100%; }
 
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
@@ -49,22 +46,38 @@ body {
     background-color: silver;
     width: 200px;
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: -40%;
-    bottom: 0;
     transition: .5s ease;
-    z-index: 1; }
+    z-index: 1;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0; }
     .s_container .s_li {
       margin: 70px 0 70px 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%;
+      height: 10%; }
       .s_container .s_li a {
         font-size: 30px;
-        color: #000; }
+        color: #000;
+        height: 100%;
+        display: flex;
+        justify-content: center; }
+        .s_container .s_li a img {
+          width: 30%; }
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
+
+  .sidebar_overlay {
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    display: none; }
 
   .all_container {
     width: 100%;
@@ -98,7 +111,7 @@ body {
       overflow: hidden; }
       .w_p_container .w_p_card_container .w_p_card {
         position: relative;
-        width: 50vw;
+        width: 60vw;
         height: 55vw;
         margin: 3vw 5vw 3vw 5vw;
         background-color: #393433; }
@@ -497,7 +510,7 @@ body {
   /* 풋터 */
   .footer_container {
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: #393433;
     margin-top: 5vw;
     display: block; }
@@ -573,24 +586,40 @@ body {
 
   .s_container {
     background-color: silver;
-    width: 200px;
+    width: 20%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: -40%;
-    bottom: 0;
     transition: .5s ease;
-    z-index: 1; }
+    z-index: 1;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0; }
     .s_container .s_li {
       margin: 70px 0 70px 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%;
+      height: 10%; }
       .s_container .s_li a {
         font-size: 30px;
-        color: #000; }
+        color: #000;
+        height: 100%;
+        display: flex;
+        justify-content: center; }
+        .s_container .s_li a img {
+          width: 30%; }
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
+
+  .sidebar_overlay {
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    display: none; }
 
   /* 이주의 선수 */
   .w_p_container {
@@ -704,7 +733,8 @@ body {
         display: flex;
         justify-content: space-between;
         background-color: #393433;
-        text-align: center; }
+        text-align: center;
+        margin: 0 1vw 0 1vw; }
         .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
           width: 11vw;
           height: 30vw;
@@ -727,7 +757,7 @@ body {
             font-size: .7vw;
             color: #fff; }
         .g_r_container .g_r_content_container .g_r_card_container .g_r_timeplace_container {
-          width: 8vw;
+          width: 15vw;
           height: 15vw; }
           .g_r_container .g_r_content_container .g_r_card_container .g_r_timeplace_container h5 {
             margin-top: 3vw;
@@ -1096,21 +1126,28 @@ body {
 
   .s_container {
     background-color: silver;
-    width: 200px;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: -40%;
-    bottom: 0;
     transition: .5s ease;
-    z-index: 1; }
+    z-index: 1;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0; }
     .s_container .s_li {
-      margin: 70px 0 70px 0;
+      margin: 50px 0 70px 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%;
+      height: 10%; }
       .s_container .s_li a {
         font-size: 30px;
-        color: #000; }
+        color: #000;
+        height: 100%;
+        display: flex;
+        justify-content: center; }
+        .s_container .s_li a img {
+          width: 30%; }
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
@@ -1550,7 +1587,7 @@ body {
   /* 풋터 */
   .footer_container {
     width: 100%;
-    height: 250px;
+    height: 30%;
     background-color: #393433;
     margin-top: 10vw;
     display: block; }

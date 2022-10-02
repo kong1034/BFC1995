@@ -1,35 +1,52 @@
 /*공통*/
-a {
-    text-decoration: none;
-    color: #fff;
+body,html {
+	height: auto;
+    width: 100%;
 }
-body {
-    overflow-x: hidden;
-}
-@mixin side_container {
-    background-color: silver;
-        width: 200px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: -40%;
-        bottom: 0;
+@mixin side_container(
+    $side_container_width
+    , $side_container_height
+    , $side_li_margin-top
+    , $side_li_margin-bottom) {
+        background-color: silver;
+        width: $side_container_width;
+        height: $side_container_height;
         transition: .5s ease;
         z-index: 1;
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
         .s_li {
-            margin: 70px 0 70px 0;
+            margin: $side_li_margin-top 0 $side_li_margin-bottom 0;
             display: flex;
             justify-content: center;
-
+            width: 100%;
+            height: 10%;
             a {
                 font-size: 30px;
                 color: #000;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 30%;
+                }
             }
             a:hover {
                 transition: .5s ease;
                 color: #922d2d;
             }
         }    
+}
+@mixin sidebar_overlay {
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    display: none;
 }
 @mixin content_footer {
     width: 100vw;
@@ -184,7 +201,15 @@ $footer_container_height
         }
     }
     .s_container {
-        @include side_container;
+        @include side_container(
+            $side_container_width:200px
+        , $side_container_height:100%
+        , $side_li_margin-top:70px
+        , $side_li_margin-bottom:70px
+        );
+    }
+    .sidebar_overlay {
+        @include sidebar_overlay();
     }
 
     .all_container {
@@ -222,7 +247,7 @@ $footer_container_height
             overflow: hidden;
             .w_p_card {
                 position: relative;
-                width: 50vw;
+                width: 60vw;
                 height: 55vw;
                 margin: 3vw 5vw 3vw 5vw;
                 background-color: #393433;
@@ -606,7 +631,7 @@ $footer_container_height
     /* 풋터 */
     .footer_container {
         @include footer_container(
-            $footer_container_height: 300px
+            $footer_container_height: auto
             , $footer_container_margin:5vw
             , $f_content_height:100%
             , $f_content_width:50%
@@ -667,7 +692,15 @@ $footer_container_height
         }
     }
     .s_container {
-        @include side_container;
+        @include side_container(
+        $side_container_width:20%
+        , $side_container_height:100%
+        , $side_li_margin-top:70px
+        , $side_li_margin-bottom:70px
+        );
+    }
+    .sidebar_overlay {
+        @include sidebar_overlay();
     }
 
     /* 이주의 선수 */
@@ -763,6 +796,7 @@ $footer_container_height
                 justify-content: space-between;
                 background-color: #393433;
                 text-align: center;
+                margin:  0 1vw 0 1vw;
                 .h_t_result_container,.a_t_result_container {
                     width: 11vw;
                     height: 30vw;
@@ -790,7 +824,7 @@ $footer_container_height
                     }
                 }
                 .g_r_timeplace_container {
-                    width: 8vw;
+                    width: 15vw;
                     height: 15vw;
                     h5 {
                         margin-top: 3vw;
@@ -1212,7 +1246,12 @@ $footer_container_height
         }
     }
     .s_container {
-        @include side_container;
+        @include side_container(
+        $side_container_width:100%
+        , $side_container_height:100%
+        , $side_li_margin-top:50px
+        , $side_li_margin-bottom:70px
+        );
     }
 
     /* 이주의 선수 */
@@ -1635,7 +1674,7 @@ $footer_container_height
     /* 풋터 */
     .footer_container {
         @include footer_container(
-            $footer_container_height: 250px
+            $footer_container_height: 30%
             , $footer_container_margin:10vw
             , $f_content_height:100%
             , $f_content_width:100%

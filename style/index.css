@@ -41,7 +41,6 @@ body, html {
         width: 2.7vw;
         height: 2.7vw;
         margin-top: .1vw; }
-
   .s_container {
     background-color: silver;
     width: 200px;
@@ -69,7 +68,6 @@ body, html {
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
-
   .sidebar_overlay {
     background-color: #000;
     opacity: 0.3;
@@ -78,12 +76,10 @@ body, html {
     z-index: 1;
     position: absolute;
     display: none; }
-
   .all_container {
     width: 100%;
     height: 100%;
     margin: 0 auto; }
-
   /* 이주의 선수 */
   .w_p_container {
     width: 100%;
@@ -131,7 +127,6 @@ body, html {
           .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container img {
             width: 100%;
             height: 100%; }
-
   .w_p_content_footer {
     width: 100vw;
     height: 6vw;
@@ -165,7 +160,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* 경기 결과 */
   .g_r_container {
     width: 100%;
@@ -234,7 +228,6 @@ body, html {
         border-right: 1px solid #fff; }
       .g_r_container .g_r_content_container .g_r_card_container:nth-child(3) {
         border-right: 1px solid #393433; }
-
   .g_r_content_footer {
     width: 100vw;
     height: 6vw;
@@ -268,7 +261,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* 선수 기록 */
   .p_r_header_container {
     margin-top: 3vw;
@@ -304,7 +296,6 @@ body, html {
         .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
         .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
           color: #fff; }
-
   .p_r_container {
     width: 100%;
     height: 50vw; }
@@ -336,7 +327,6 @@ body, html {
       border-right: 1px solid #fff; }
     .p_r_container .p_r_card_container:nth-child(3) {
       border-right: 1px solid #fff; }
-
   .p_r_content_footer {
     width: 100vw;
     height: 6vw;
@@ -370,18 +360,16 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* BI */
   .p_r_bi_container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3vw; }
+    margin-top: 7vw; }
     .p_r_bi_container img {
       width: 60%;
       height: 60%; }
-
   /* 포토 갤러리 */
   .p_gallery_container {
     width: 100%;
@@ -427,7 +415,6 @@ body, html {
         .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container img {
           width: 100%;
           height: 100%; }
-
   .p_g_footer {
     width: 15vw;
     height: 6vw;
@@ -442,7 +429,6 @@ body, html {
       align-items: center;
       background-color: #922d2d;
       color: #fff; }
-
   /* 스폰서 */
   .t_sponsor_container {
     margin-top: 3vw;
@@ -506,7 +492,6 @@ body, html {
           .t_sponsor_container .t_s_bottom_container ul li a img {
             width: 23%;
             height: 100%; }
-
   /* 풋터 */
   .footer_container {
     width: 100%;
@@ -546,6 +531,7 @@ body, html {
           color: #fff; }
         .footer_container .f_content_container .f_txt_container .f_right_container h1 {
           color: #b3b3b3; } }
+
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
   /* 헤더 */
@@ -581,7 +567,6 @@ body, html {
       header .h_c_menu a, header .h_c_menu img {
         width: 70%;
         height: 80%; }
-
   .s_container {
     background-color: silver;
     width: 20%;
@@ -609,7 +594,6 @@ body, html {
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
-
   .sidebar_overlay {
     background-color: #000;
     opacity: 0.3;
@@ -618,7 +602,6 @@ body, html {
     z-index: 1;
     position: absolute;
     display: none; }
-
   /* 이주의 선수 */
   .w_p_container {
     width: 100%;
@@ -666,7 +649,6 @@ body, html {
           .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container img {
             width: 100%;
             height: 100%; }
-
   .w_p_content_footer {
     width: 100vw;
     height: 6vw;
@@ -700,7 +682,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* 경기 결과 */
   .g_r_container {
     width: 100%;
@@ -768,7 +749,6 @@ body, html {
         border-right: 1px solid #fff; }
       .g_r_container .g_r_content_container .g_r_card_container:nth-child(3) {
         border-right: 1px solid #393433; }
-
   .g_r_content_footer {
     width: 100vw;
     height: 6vw;
@@ -802,7 +782,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* 선수 기록 */
   .p_r_header_container {
     margin-top: 10vw;
@@ -838,7 +817,6 @@ body, html {
         .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
         .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
           color: #fff; }
-
   .p_r_container {
     width: 100%;
     height: 50vw;
@@ -873,7 +851,6 @@ body, html {
       border-right: 1px solid #fff; }
     .p_r_container .p_r_card_container:nth-child(3) {
       border-right: 1px solid #fff; }
-
   .p_r_content_footer {
     width: 100vw;
     height: 6vw;
@@ -907,7 +884,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* BI */
   .p_r_bi_container {
     width: 100%;
@@ -919,7 +895,6 @@ body, html {
     .p_r_bi_container img {
       width: 100%;
       height: 100%; }
-
   /* 포토 갤러리 */
   .p_gallery_container {
     width: 100%;
@@ -965,7 +940,6 @@ body, html {
         .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container img {
           width: 100%;
           height: 100%; }
-
   .p_g_footer {
     width: 15vw;
     height: 6vw;
@@ -980,7 +954,6 @@ body, html {
       align-items: center;
       background-color: #922d2d;
       color: #fff; }
-
   /* 스폰서 */
   .t_sponsor_container {
     margin-top: 10vw;
@@ -1044,7 +1017,6 @@ body, html {
           .t_sponsor_container .t_s_bottom_container ul li a img {
             width: 23%;
             height: 100%; }
-
   /* 풋터 */
   .footer_container {
     width: 100%;
@@ -1084,6 +1056,7 @@ body, html {
           color: #fff; }
         .footer_container .f_content_container .f_txt_container .f_right_container h1 {
           color: #b3b3b3; } }
+
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width: 767px) {
   /* 헤더 */
@@ -1119,7 +1092,6 @@ body, html {
       header .h_c_menu a, header .h_c_menu img {
         width: 70%;
         height: 80%; }
-
   .s_container {
     background-color: silver;
     width: 100%;
@@ -1147,7 +1119,6 @@ body, html {
       .s_container .s_li a:hover {
         transition: .5s ease;
         color: #922d2d; }
-
   /* 이주의 선수 */
   .w_p_container {
     width: 100%;
@@ -1195,7 +1166,6 @@ body, html {
           .w_p_container .w_p_card_container .w_p_card .w_p_c_img_container img {
             width: 100%;
             height: 100%; }
-
   .w_p_content_footer {
     width: 100vw;
     height: 6vw;
@@ -1229,7 +1199,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* 경기 결과 */
   .g_r_container {
     width: 100%;
@@ -1300,7 +1269,6 @@ body, html {
         border-right: 1px solid #fff; }
       .g_r_container .g_r_content_container .g_r_card_container:nth-child(3) {
         border-right: 1px solid #393433; }
-
   .g_r_content_footer {
     width: 100vw;
     height: 6vw;
@@ -1334,7 +1302,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* 선수 기록 */
   .p_r_header_container {
     width: 100%;
@@ -1373,7 +1340,6 @@ body, html {
         .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
         .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
           color: #fff; }
-
   .p_r_container {
     width: 100%;
     height: 100vw;
@@ -1408,7 +1374,6 @@ body, html {
       border-right: 1px solid #fff; }
     .p_r_container .p_r_card_container:nth-child(3) {
       border-right: 1px solid #fff; }
-
   .p_r_content_footer {
     width: 100vw;
     height: 6vw;
@@ -1442,7 +1407,6 @@ body, html {
       background-color: #922d2d;
       color: #fff;
       margin-right: 5%; }
-
   /* BI */
   .p_r_bi_container {
     width: 100%;
@@ -1453,7 +1417,6 @@ body, html {
     .p_r_bi_container img {
       width: 100%;
       height: 60%; }
-
   /* 포토 갤러리 */
   .p_gallery_container {
     width: 100%;
@@ -1499,7 +1462,6 @@ body, html {
         .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container img {
           width: 100%;
           height: 100%; }
-
   .p_g_footer {
     width: 20vw;
     height: 10vw;
@@ -1514,7 +1476,6 @@ body, html {
       align-items: center;
       background-color: #922d2d;
       color: #fff; }
-
   /* 스폰서 */
   .t_sponsor_container {
     margin: 10% 0 20% 0;
@@ -1579,7 +1540,6 @@ body, html {
           .t_sponsor_container .t_s_bottom_container ul li a img {
             width: 23%;
             height: 100%; }
-
   /* 풋터 */
   .footer_container {
     width: 100%;
@@ -1631,5 +1591,3 @@ body, html {
       width: 50%;
       height: 50%;
       margin: 0; } }
-
-/*# sourceMappingURL=index.css.map */

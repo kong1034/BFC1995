@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*공통*/
-body,
-html {
+body, html {
   height: auto;
   width: 100%; }
 
@@ -16,9 +15,7 @@ html {
       list-style: none;
       display: flex;
       justify-content: space-around; }
-    header .h_c_sns,
-    header .h_c_logo,
-    header .h_c_menu {
+    header .h_c_sns, header .h_c_logo, header .h_c_menu {
       width: 30%;
       height: 5vw;
       margin-bottom: 10px; }
@@ -33,16 +30,14 @@ html {
     header .h_c_logo {
       display: flex;
       justify-content: center; }
-      header .h_c_logo a,
-      header .h_c_logo img {
+      header .h_c_logo a, header .h_c_logo img {
         width: 4vw;
         height: 5vw; }
     header .h_c_menu {
       display: flex;
       justify-content: flex-end;
       margin: 1vw 2vw 0 0; }
-      header .h_c_menu a,
-      header .h_c_menu img {
+      header .h_c_menu a, header .h_c_menu img {
         width: 2.7vw;
         height: 2.7vw;
         margin-top: .1vw; }
@@ -103,8 +98,7 @@ html {
       margin-left: 1vw;
       width: 99%;
       height: 10vw; }
-      .w_p_container .w_p_title p,
-      .w_p_container .w_p_title h2 {
+      .w_p_container .w_p_title p, .w_p_container .w_p_title h2 {
         font-size: 2.5vw;
         color: #922d2d;
         font-weight: bolder;
@@ -187,8 +181,7 @@ html {
       margin-left: 1vw;
       width: 99%;
       height: 10vw; }
-      .g_r_container .g_r_title p,
-      .g_r_container .g_r_title h2 {
+      .g_r_container .g_r_title p, .g_r_container .g_r_title h2 {
         font-size: 2.5vw;
         color: #922d2d;
         font-weight: bolder;
@@ -206,30 +199,25 @@ html {
         justify-content: space-between;
         background-color: #393433;
         text-align: center; }
-        .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container,
-        .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
+        .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
           width: 11vw;
           height: 30vw;
           display: flex;
           flex-direction: column; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
             width: 5vw;
             height: 6vw;
             margin: 1vw 3vw; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
             width: 100%;
             margin: 1vw 0;
             font-size: 1.3vw;
             color: #fff; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
             margin: 1vw 0;
             font-size: 4vw;
             color: #fff; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
             font-size: .7vw;
             color: #fff; }
         .g_r_container .g_r_content_container .g_r_card_container .g_r_timeplace_container {
@@ -313,10 +301,8 @@ html {
         .p_r_header_container ul li .p_r_h_score_txt {
           color: #922d2d;
           font-weight: bolder; }
-        .p_r_header_container ul li .p_r_h_assist_txt,
-        .p_r_header_container ul li .p_r_h_tackle_txt,
-        .p_r_header_container ul li .p_r_h_shooting_txt,
-        .p_r_header_container ul li .p_r_h_killpass_txt {
+        .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
+        .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
           color: #fff; }
 
   .p_r_container {
@@ -430,8 +416,7 @@ html {
       .p_gallery_container .p_g_photo_container .p_g_right_container {
         width: 60%;
         height: 50vw; }
-        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container,
-        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
+        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container, .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
           width: 100%;
           height: 50%;
           display: flex;
@@ -476,9 +461,7 @@ html {
         padding-left: 1vw;
         border-left: 5px solid #922d2d;
         color: #922d2d; }
-    .t_sponsor_container .t_s_top_container,
-    .t_sponsor_container .t_s_middle_container,
-    .t_sponsor_container .t_s_bottom_container {
+    .t_sponsor_container .t_s_top_container, .t_sponsor_container .t_s_middle_container, .t_sponsor_container .t_s_bottom_container {
       width: 100%;
       height: 33.33%;
       display: flex;
@@ -555,8 +538,7 @@ html {
       .footer_container .f_content_container .f_txt_container {
         width: 100%;
         height: 4vw; }
-        .footer_container .f_content_container .f_txt_container .f_addr_container,
-        .footer_container .f_content_container .f_txt_container .f_right_container {
+        .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
           width: 100%;
           height: 50%;
           text-align: center; }
@@ -590,15 +572,13 @@ html {
     header .h_c_logo {
       padding-left: 13%;
       margin: 1.5% 0 1.5% 0; }
-      header .h_c_logo a,
-      header .h_c_logo img {
+      header .h_c_logo a, header .h_c_logo img {
         width: 55%;
         height: 80%; }
     header .h_c_menu {
       padding-left: 20%;
       margin: 3% 0 1.5% 0; }
-      header .h_c_menu a,
-      header .h_c_menu img {
+      header .h_c_menu a, header .h_c_menu img {
         width: 70%;
         height: 80%; }
 
@@ -653,8 +633,7 @@ html {
       margin-left: 1vw;
       width: 99%;
       height: 10vw; }
-      .w_p_container .w_p_title p,
-      .w_p_container .w_p_title h2 {
+      .w_p_container .w_p_title p, .w_p_container .w_p_title h2 {
         font-size: 2.5vw;
         color: #922d2d;
         font-weight: bolder;
@@ -736,8 +715,7 @@ html {
       margin-left: 1vw;
       width: 99%;
       height: 10vw; }
-      .g_r_container .g_r_title p,
-      .g_r_container .g_r_title h2 {
+      .g_r_container .g_r_title p, .g_r_container .g_r_title h2 {
         font-size: 2.5vw;
         color: #922d2d;
         font-weight: bolder;
@@ -755,30 +733,25 @@ html {
         background-color: #393433;
         text-align: center;
         margin: 0 1vw 0 1vw; }
-        .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container,
-        .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
+        .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
           width: 11vw;
           height: 30vw;
           display: flex;
           flex-direction: column; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
             width: 5vw;
             height: 6vw;
             margin: 1vw 3vw; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
             width: 100%;
             margin: 1vw 0;
             font-size: 1.3vw;
             color: #fff; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
             margin: 1vw 0;
             font-size: 4vw;
             color: #fff; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
             font-size: .7vw;
             color: #fff; }
         .g_r_container .g_r_content_container .g_r_card_container .g_r_timeplace_container {
@@ -862,10 +835,8 @@ html {
         .p_r_header_container ul li .p_r_h_score_txt {
           color: #922d2d;
           font-weight: bolder; }
-        .p_r_header_container ul li .p_r_h_assist_txt,
-        .p_r_header_container ul li .p_r_h_tackle_txt,
-        .p_r_header_container ul li .p_r_h_shooting_txt,
-        .p_r_header_container ul li .p_r_h_killpass_txt {
+        .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
+        .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
           color: #fff; }
 
   .p_r_container {
@@ -983,8 +954,7 @@ html {
       .p_gallery_container .p_g_photo_container .p_g_right_container {
         width: 60%;
         height: 50vw; }
-        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container,
-        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
+        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container, .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
           width: 100%;
           height: 50%;
           display: flex;
@@ -1029,9 +999,7 @@ html {
         padding-left: 1vw;
         border-left: 5px solid #922d2d;
         color: #922d2d; }
-    .t_sponsor_container .t_s_top_container,
-    .t_sponsor_container .t_s_middle_container,
-    .t_sponsor_container .t_s_bottom_container {
+    .t_sponsor_container .t_s_top_container, .t_sponsor_container .t_s_middle_container, .t_sponsor_container .t_s_bottom_container {
       width: 100%;
       height: 33.33%;
       display: flex;
@@ -1108,8 +1076,7 @@ html {
       .footer_container .f_content_container .f_txt_container {
         width: 100%;
         height: 4vw; }
-        .footer_container .f_content_container .f_txt_container .f_addr_container,
-        .footer_container .f_content_container .f_txt_container .f_right_container {
+        .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
           width: 100%;
           height: 50%;
           text-align: center; }
@@ -1143,15 +1110,13 @@ html {
     header .h_c_logo {
       padding-left: 13%;
       margin: 1.5% 0 1.5% 0; }
-      header .h_c_logo a,
-      header .h_c_logo img {
+      header .h_c_logo a, header .h_c_logo img {
         width: 55%;
         height: 80%; }
     header .h_c_menu {
       padding-left: 20%;
       margin: 3% 0 1.5% 0; }
-      header .h_c_menu a,
-      header .h_c_menu img {
+      header .h_c_menu a, header .h_c_menu img {
         width: 70%;
         height: 80%; }
 
@@ -1197,8 +1162,7 @@ html {
       margin: 5vw 0 0 3vw;
       width: 99%;
       height: 10vw; }
-      .w_p_container .w_p_title p,
-      .w_p_container .w_p_title h2 {
+      .w_p_container .w_p_title p, .w_p_container .w_p_title h2 {
         font-size: 4vw;
         color: #922d2d;
         font-weight: bolder;
@@ -1280,8 +1244,7 @@ html {
       margin-left: 3vw;
       width: 99%;
       height: 10vw; }
-      .g_r_container .g_r_title p,
-      .g_r_container .g_r_title h2 {
+      .g_r_container .g_r_title p, .g_r_container .g_r_title h2 {
         font-size: 4vw;
         color: #922d2d;
         font-weight: bolder;
@@ -1299,31 +1262,26 @@ html {
         justify-content: space-between;
         background-color: #393433;
         text-align: center; }
-        .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container,
-        .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
+        .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container {
           width: 25vw;
           height: 100%;
           margin: 5vw 5vw 0 5vw;
           display: flex;
           flex-direction: column; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container img, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container img {
             width: 10vw;
             height: 12vw;
             margin: 3vw 9.5vw 5vw 9.5vw; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h2, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h2 {
             width: 100%;
             margin: 1vw 1vw 0 2vw;
             font-size: 3vw;
             color: #fff; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h1, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h1 {
             margin: 3vw 5vw 3vw 9vw;
             font-size: 5vw;
             color: #fff; }
-          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5,
-          .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
+          .g_r_container .g_r_content_container .g_r_card_container .h_t_result_container h5, .g_r_container .g_r_content_container .g_r_card_container .a_t_result_container h5 {
             margin-left: 5vw;
             font-size: 2vw;
             color: #fff; }
@@ -1392,8 +1350,7 @@ html {
       margin-left: 3vw;
       width: 99%;
       height: 10vw; }
-      .p_r_header_container .p_r_title p,
-      .p_r_header_container .p_r_title h2 {
+      .p_r_header_container .p_r_title p, .p_r_header_container .p_r_title h2 {
         font-size: 4vw;
         color: #922d2d;
         font-weight: bolder;
@@ -1413,10 +1370,8 @@ html {
         .p_r_header_container ul li .p_r_h_score_txt {
           color: #922d2d;
           font-weight: bolder; }
-        .p_r_header_container ul li .p_r_h_assist_txt,
-        .p_r_header_container ul li .p_r_h_tackle_txt,
-        .p_r_header_container ul li .p_r_h_shooting_txt,
-        .p_r_header_container ul li .p_r_h_killpass_txt {
+        .p_r_header_container ul li .p_r_h_assist_txt, .p_r_header_container ul li .p_r_h_tackle_txt,
+        .p_r_header_container ul li .p_r_h_shooting_txt, .p_r_header_container ul li .p_r_h_killpass_txt {
           color: #fff; }
 
   .p_r_container {
@@ -1533,8 +1488,7 @@ html {
       .p_gallery_container .p_g_photo_container .p_g_right_container {
         width: 60%;
         height: 60vw; }
-        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container,
-        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
+        .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_top_container, .p_gallery_container .p_g_photo_container .p_g_right_container .p_g_r_bottom_container {
           width: 100%;
           height: 50%;
           display: flex;
@@ -1547,8 +1501,8 @@ html {
           height: 100%; }
 
   .p_g_footer {
-    width: 15vw;
-    height: 6vw;
+    width: 20vw;
+    height: 10vw;
     line-height: 2vw;
     margin: 3vw 0 0 75vw;
     display: flex; }
@@ -1580,9 +1534,7 @@ html {
         font-weight: bolder;
         padding-left: 1vw;
         border-left: 5px solid #922d2d; }
-    .t_sponsor_container .t_s_top_container,
-    .t_sponsor_container .t_s_middle_container,
-    .t_sponsor_container .t_s_bottom_container {
+    .t_sponsor_container .t_s_top_container, .t_sponsor_container .t_s_middle_container, .t_sponsor_container .t_s_bottom_container {
       width: 100%;
       height: 33.33%;
       display: flex;
@@ -1631,7 +1583,7 @@ html {
   /* 풋터 */
   .footer_container {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-color: #393433;
     margin-top: 3vw;
     display: block; }
@@ -1662,8 +1614,7 @@ html {
       .footer_container .f_content_container .f_txt_container {
         width: 100%;
         height: 60px; }
-        .footer_container .f_content_container .f_txt_container .f_addr_container,
-        .footer_container .f_content_container .f_txt_container .f_right_container {
+        .footer_container .f_content_container .f_txt_container .f_addr_container, .footer_container .f_content_container .f_txt_container .f_right_container {
           width: 100%;
           height: 50%;
           text-align: center; }

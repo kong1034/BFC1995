@@ -2,7 +2,9 @@
 /*공통*/
 body, html {
   height: auto;
-  width: 100%; }
+  width: 100%; 
+  font-family: 'Jua', sans-serif;
+}
 
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
